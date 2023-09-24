@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Buku By AIChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- <img src="assets/images/books.jpg" alt="Rekomendasi Buku"> -->
+        <div>
+            <h1>Rekomendasi Buku By AIChat</h1>
+            <p class="text-header">Temukan buku yang sesuai dengan minatmu</p>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <div>
+            <div class="left">
+                <h2>Apa itu buku?</h2>
+                <p class="text-about">Buku adalah kumpulan tulisan yang disusun secara sistematis dan dijilid menjadi satu. Buku dapat berisi
+                    berbagai macam informasi, seperti cerita, pengetahuan, atau panduan.</p>
+            </div>
+            <div class="right">
+                <img src="assets/images/buku.jpg" alt="Buku">
+            </div>
+        </div>
+        <div>
+            <div class="left">
+                <h2>Apa itu novel?</h2>
+                <p class="text-about">Novel adalah karya sastra yang berbentuk prosa dan menceritakan kisah atau pengalaman seseorang
+                    secara
+                    panjang. Novel biasanya memiliki lebih dari 40.000 kata.</p>
+               
+            </div>
+            <div class="right">
+                <img src="assets/images/novel.jpg" alt="Novel">
+            </div>
+        </div>
+        <div>
+            <div class="left">
+                <h2>Apa itu cerita pendek?</h2>
+                <p class="text-about">Cerita pendek adalah karya sastra yang berbentuk prosa dan menceritakan kisah atau pengalaman
+                    seseorang
+                    secara singkat. Cerita pendek biasanya memiliki kurang dari 40.000 kata.</p>
+                
+                
+            </div>
+            <div class="right">
+                <img src="assets/images/cerpen.jpg" alt="Cerita pendek">
+            </div>
+        </div>
+        
+    </section>
+    <section>
+        <h2>Contoh Karya</h2>
+        <ul>
+            <li>
+                <h3>Buku</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.goodreads.com/book/show/23753.Sapiens_A_Brief_History_of_Humankind">
+                            Sapiens: A Brief History of Humankind by Yuval Noah Harari
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.goodreads.com/book/show/19819.The_Wealth_of_Nations">
+                            The Wealth of Nations by Adam Smith
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.goodreads.com/book/show/11425.The_Hitchhiker_s_Guide_to_the_Galaxy">
+                            The Hitchhiker's Guide to the Galaxy by Douglas Adams
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Novel</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.goodreads.com/book/show/10125.Twilight">
+                            Twilight by Stephenie Meyer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.goodreads.com/book/show/5362.The_Notebook">
+                            The Notebook by Nicholas Sparks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.goodreads.com/book/show/13495.Pride_and_Prejudice">
+                            Pride and Prejudice by Jane Austen
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Cerita Pendek</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.goodreads.com/story/show/28834.The_Love_Song_of_J_Alfred_Prufrock">
+                            The Love Song of J. Alfred Prufrock by T.S. Eliot
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.goodreads.com/story/show/28835.The_Necklace">
+                            The Necklace by Guy de Maupassant
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.goodreads.com/story/show/28836.The_Gift_of_the_Magi">
+                            The Gift of the Magi by O. Henry
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </section>
+    <!-- Contact
+    <section class="contact">
+        <h2>Hubungi kami</h2>
+        <form action="action.php" method="post">
+            <input type="text" name="name" placeholder="Nama">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="message" placeholder="Pesan">
+        </form>
+        <button type="submit">Kirim</button>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2023 AIChat</p>
+    </footer>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "2346527f-5cd6-4a05-9e08-8a53f12eee8c", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "ac2eb03e-0146-472f-8188-a6565bed48df", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+</html>
